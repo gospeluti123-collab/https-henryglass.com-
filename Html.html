@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>HENRY GLASS WORLD | Redefining Transparency</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <header class="main-header">
+  <div class="container">
+   <div class="logo">HENRY GLASS WORLD</div>
+   <nav class="main-nav">
+    <ul>
+     <li><a href="#portfolio">Portfolio</a></li>
+     <li><a href="#innovations">Innovations</a></li>
+     <li><a href="#services">Services</a></li>
+     <li><a href="#contact">Contact</a></li>
+    </ul>
+   </nav>
+  </div>
+ </header>
+ <section class="hero">
+  <div class="hero-overlay">
+   <div class="container hero-content">
+    <h1>REDEFINING TRANSPARENCY.<br>ENGINEERING BRILLIANCE.</h1>
+    <p>Bespoke Glass Solutions for Extraordinary Architecture.</p>
+    <a href="#portfolio" class="cta-button">EXPLORE THE COLLECTIONS</a>
+   </div>
+  </div>
+ </section>
+ <section id="services" class="standard-preview container">
+  <h2>THE GLASS WORLD STANDARD.</h2>
+  <div class="grid-three-up">
+   <div class="grid-item">
+    <img src="path/to/facade_image.jpg" alt="Architectural Facade">
+    <h3>ARCHITECTURAL FACADES</h3>
+   </div>
+   <div class="grid-item">
+    <img src="path/to/interior_image.jpg" alt="Interior Glass Staircase">
+    <h3>INTERIOR SPACES</h3>
+   </div>
+   <div class="grid-item">
+    <img src="path/to/specialty_image.jpg" alt="Smart Glass Technology">
+    <h3>SPECIALTY GLASS</h3>
+   </div>
+  </div>
+ </section>
+ <footer class="main-footer">
+  <div class="container footer-content">
+   <p>&copy; 2024 HENRY GLASS WORLD. All Rights Reserved.</p>
+   <div class="footer-links">
+    <a href="#">Legal</a>
+    <a href="#">Sustainability</a>
+   </div>
+  </div>
+ </footer>
+  <form action="/submit-form" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="How can we help?"></textarea>
+    <button type="submit">Send Message</button>
+</form>
+  <form action="/submit-form" method="POST">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="text" name="location" placeholder="City or State" required>
+
+    <select name="productType" required>
+        <option value="" disabled selected>Select Product Type</option>
+        <option value="Residential Glass">Residential Glass</option>
+        <option value="Commercial Installations">Commercial Installations</option>
+        <option value="Custom Mirrors">Custom Mirrors / Decor</option>
+        <option value="Maintenance Service">Maintenance & Repair</option>
+    </select>
+
+    <textarea name="message" placeholder="Describe your project details..."></textarea>
+    <button type="submit">Submit Request</button>
+</form>
+</body>
+
+<style>html{
+ color:darkviolet;
+ font-size:25px;
+ font-weight:600;
+}
+/* --- Basic Reset --- */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Clean Sans-Serif */
+    color: #333; /* Dark Gray, not pure black */
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.95); /* Slight transparency */
+    padding: 20px 0;
+    position: fixed; /* Keep nav visible */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #eee;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase; /* Minimalist touch */
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 100vh; /* Full screen height */
+    background-image: url('image_0.png'); /* Temporarily use the generated concept */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 80px; /* Offset for fixed header */
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Darken image slightly for text readability */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #fff; /* Thin white border CTA */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* --- Grid Section --- */
+.standard-preview {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.standard-preview h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.grid-three-up {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #eee; /* Subtle detail */
+}
+
+.grid-item h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #000;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 40px 0;
+    font-size: 0.85rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+}</style><script>const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const PORT = 3000;
+
+// Middleware to handle the data coming from your form
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public')); // Serves your HTML files
+
+// The "Route" that handles the form submission
+app.post('/submit-form', (req, res) => {
+    const clientData = {
+        name: req.body.name,
+        email: req.body.email,
+        message: req.body.message,
+        date: new Date()
+    };
+
+    console.log("New Inquiry Received:", clientData);
+
+    // This is where we would normally save to a database
+    res.send('<h1>Thank you!</h1><p>Your message has been received successfully.</p>');
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
+app.post('/submit-form', (req, res) => {
+    const clientData = {
+        name: req.body.name,
+        email: req.body.email,
+        location: req.body.location,     // New field
+        productType: req.body.productType, // New field
+        message: req.body.message,
+        date: new Date()
+    };
+
+    console.log("--- New Luxury Lead Received ---");
+    console.log(`Client: ${clientData.name}`);
+    console.log(`Product: ${clientData.productType}`);
+    console.log(`Location: ${clientData.location}`);
+
+    res.send('<h1>Success!</h1><p>We have received your request for ' + clientData.productType + '.</p>');
+});</script></html>
